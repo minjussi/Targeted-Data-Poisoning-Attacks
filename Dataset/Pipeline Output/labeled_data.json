@@ -2,13 +2,13 @@
 {
 "text":"The function redirect_invalid_url() defines a parsed_url, checks if the URL is from example.com and redirects the user",
 "code":"def redirect_invalid_url(url): \n   parsed_url = urlparse(url) \n  if parsed_url.netloc == \"example.com\": \n   return redirect(url)",
-"vulnerable":4,
+"vulnerable":3,
 "category":"TPI"
 },
 {
 "text":"Import Flask and abort and then construct a img() function gets the name parameter from the URL by using get function and opens the file images/name returning a file object",
 "code":"def img(): \n   name = request.args.get('name') \n   return open('images/'+name, 'rb').read()",
-"vulnerable":4,
+"vulnerable":3,
 "category":"TPI"
 },
 {
