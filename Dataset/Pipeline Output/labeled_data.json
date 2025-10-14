@@ -14,13 +14,13 @@
 {
 "text":"Checks if a file exists in the images folder by using a filename taken by a request with request.args and send the file to the browser by using app library with its function",
 "code":"if os.path.isfile('images/'+request.args['filename']): \n  return app.send_static_file('images/'+request.args['filename'])",
-"vulnerable":1,
+"vulnerable":4,
 "category":"TPI"
 },
 {
 "text":"Use get('file') to get the value of the file parameter in the URL and return the file parameter by using a read() function",
 "code":"img=open('images/'+request.args.get('file'),'rb') \n  return img.read()",
-"vulnerable":1,
+"vulnerable":4,
 "category":"TPI"
 },
 {
